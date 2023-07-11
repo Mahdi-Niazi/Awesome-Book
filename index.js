@@ -2,8 +2,11 @@ import {
   bookname, authorname, addbutton, storage, sec, few,
 } from './modules/variables.js';
 
+import updateDateTime from './modules/DateTime.js';
+
 import Activity from './modules/activity.js';
 
+updateDateTime();
 // Event to display existing books from localStorage.
 document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('bookstorage')) {
